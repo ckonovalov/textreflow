@@ -1,0 +1,65 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.israel-flag {
+    margin-right: 10px;
+}
+
+textarea, #outputText {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    direction: rtl;
+    text-align: right;
+}
+
+#outputText {
+    flex: 1;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    direction: ltr;
+    white-space: pre-wrap;
+}
+
+#outputText span {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 2px;
+    margin: 1px;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}
