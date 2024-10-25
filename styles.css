@@ -31,7 +31,7 @@ h1 {
 
 textarea, #outputText {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -62,15 +62,22 @@ textarea {
     display: inline-block;
     border: 1px solid #ddd;
     padding: 2px 0;
-    margin: 1px -1px 1px 0px; /* Изменено на 1px -1px 1px 0px */
+    margin: 1px -1px 1px 0px;
+}
+
+.preview-label {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
 }
 
 .highlight {
-    color: #3498db; /* Голубой цвет для знаков препинания и других символов */
+    color: #3498db;
 }
 
 .highlight-dark {
-    color: #2980b9; /* Более темный голубой для латинских букв и цифр */
+    color: #2980b9;
 }
 
 #copyButton {
@@ -98,4 +105,11 @@ textarea {
 
 .blink {
     animation: blink-outline 1s ease;
+}
+
+.description {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
 }

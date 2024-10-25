@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hebrew Text Reverser</title>
+    <title>TextReflow</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW4W390C9K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FW4W390C9K');
+    </script>
+    <!-- End Google Analytics -->
 </head>
 <body>
     <div class="container">
-        <h1>Hebrew Text Reverser</h1>
-        <textarea id="inputText" placeholder="Enter Hebrew text here"></textarea>
+        <h1>TextReflow</h1>
+        <p class="description">TextReflow converts Hebrew and Arabic text for apps without right-to-left support, like Affinity Designer.</p>
+        <textarea id="inputText" placeholder="Enter Hebrew or Arabic text here"></textarea>
+        <p class="preview-label">Text preview (as seen in design software)</p>
         <div id="outputText"></div>
-        <button id="copyButton">Copy Result</button>
+        <button id="copyButton">Copy to clipboard</button>
     </div>
     <script src="script.js"></script>
 </body>
