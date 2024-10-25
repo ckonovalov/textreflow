@@ -1,5 +1,5 @@
 body, html {
-    font-family: Arial, sans-serif;
+    font-family: 'Assistant', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -21,11 +21,13 @@ h1 {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
-.israel-flag {
+/* Удалите или закомментируйте эту строку */
+/* .israel-flag {
     margin-right: 10px;
-}
+} */
 
 textarea, #outputText {
     width: 100%;
@@ -35,6 +37,7 @@ textarea, #outputText {
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
 }
 
 textarea {
@@ -50,16 +53,49 @@ textarea {
     overflow-y: auto;
     direction: ltr;
     white-space: pre-wrap;
+    transition: outline 0.5s ease;
+    outline: none;
+    text-align: right;
 }
 
 #outputText span {
     display: inline-block;
     border: 1px solid #ddd;
-    padding: 2px;
-    margin: 1px;
+    padding: 2px 0;
+    margin: 1px -1px 1px 0px; /* Изменено на 1px -1px 1px 0px */
 }
 
 .highlight {
-    color: #e74c3c;
-    font-weight: bold;
+    color: #3498db; /* Голубой цвет для знаков препинания и других символов */
+}
+
+.highlight-dark {
+    color: #2980b9; /* Более темный голубой для латинских букв и цифр */
+}
+
+#copyButton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+}
+
+#copyButton:hover {
+    background-color: #2980b9;
+}
+
+@keyframes blink-outline {
+    0% { outline: 3px solid transparent; }
+    50% { outline: 3px solid #aed6f1; }
+    100% { outline: 3px solid transparent; }
+}
+
+.blink {
+    animation: blink-outline 1s ease;
 }

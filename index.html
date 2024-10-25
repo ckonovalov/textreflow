@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Переворот текста на иврите</title>
+    <title>Hebrew Text Reverser</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>
-            <svg class="israel-flag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" width="30" height="22">
-                <rect width="1100" height="800" fill="#fff"/>
-                <path d="M0,75H1100v125H0zm0,525H1100v125H0z" fill="#0038b8"/>
-                <path d="M550,400 525,450 500,400 525,350z"/>
-                <path d="M550,400 575,450 600,400 575,350z"/>
-                <path d="M525,350 575,350 550,287z"/>
-                <path d="M525,450 575,450 550,513z"/>
-            </svg>
-            Переворот текста на иврите
-        </h1>
-        <textarea id="inputText" placeholder="Введите текст на иврите здесь"></textarea>
+        <h1>Hebrew Text Reverser</h1>
+        <textarea id="inputText" placeholder="Enter Hebrew text here"></textarea>
         <div id="outputText"></div>
+        <button id="copyButton">Copy Result</button>
     </div>
     <script src="script.js"></script>
 </body>
